@@ -1,4 +1,4 @@
-# TeachMeSkills-Android-developer
+# TeachMeSkills - Android-developer
 
 #### This repository was created as part of training at the "TeachMeSkills" school at the "Android developer" course.
 ___
@@ -8,9 +8,16 @@ ___
 ### Group: ___AN10-onl___
 ___
 
-## Chapter №1: Java
+<a id="anchor"></a>
+## Table of contents
+1. [Chapter №1: Java](#chapter01)
+   1. [Lesson 01 - Introduction to java](#lesson01)
+   2. [Lesson 02 - Repositories](#lesson02)
+___
 
-### ___Lesson 01 - Introduction to java___
+## Chapter №1: Java<a id="chapter01"></a>
+
+### ___Lesson 01 - Introduction to java___<a id="lesson01"></a>
 This lesson talked about:
 * what Java is,
 * the main components of the Java language,
@@ -24,9 +31,11 @@ Homework required:
 * install JDK
 * install IDE - Intellij Idea
 * write the first program
+
+[Table of contents](#anchor)
 ___
 
-### ___Lesson 02 - Repositories___ 
+### ___Lesson 02 - Repositories___<a id="lesson02"></a>
 This lesson talked about:
 * what repositories are,
 * what GIT is and why it is needed,
@@ -47,4 +56,6 @@ Homework required:
 * add the email address of the teacher as a project participant ,
 * add teachers to assignees and reviewers in all pull requests 
 * add files from the first and second lessons to branches other than main and make a pull request.
+
+[Table of contents](#anchor)
 ___
