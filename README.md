@@ -13,6 +13,7 @@ ___
 1. [Chapter №1: Java](#chapter01)
    1. [Lesson 01 - Introduction to java](#lesson01)
    2. [Lesson 02 - Repositories](#lesson02)
+   3. [Lesson 03 - Variables, expressions, operators](#lesson03)
 ___
 
 <a id="chapter01"></a>
@@ -20,7 +21,6 @@ ___
 
 <a id="lesson01"></a>
 ### ___Lesson 01 - Introduction to java___
-
 **This lesson talked about:**
 * what Java is,
 * the main components of the Java language,
@@ -72,3 +72,48 @@ And also need more practice in working with GIT with the terminal.
 
 [Table of contents](#anchor)
 ___
+
+<a id="lesson03"></a>
+### ___Lesson 03 - Variables, expressions, operators___
+**This lesson talked about:**
+* Literals 
+* Data types
+* Type casting
+* Java statements
+* Priority of operations
+
+
+**Homework required. Part №1:**
+- [x] Write a program to display the time of year by month number.
+- [x] Should be two options: switch-case and if-else-if.
+- [x] Write a program that will take a number than input (can be set explicitly in the code) 
+   and will display a message about the parity of the number.
+- [x] For the number (outdoor temperature) it turns out:
+    - if t > 15, then output "Heat"
+    - if t <= 15 and t > -5, then it turns out "Normal"
+    - if t <= 5, then it will be "Cold".
+- [x] By the entered (can be set explicitly) number, determine the color of the rainbow.
+
+**Homework required. Part №2:**
+- [x] Use a for loop to display odd numbers from 1 to 99. (use increment).
+- [x] Use a for loop to display numbers from 15 to 1. (use decrement).
+- [x] Write a program where the user enters any positive integer - N.
+      Program sums all numbers from 1 to N. To enter a number, use the Scanner class.
+- [x] Write a program that will display the following sequence on the screen:
+      7 14 21 28 35 42 49 56 63 70 77 84 91 98. Use the while loop in the solution.
+- [x] Output the first 10 numbers of the sequence 0, -5, -10, -15...
+- [x] Write a program that displays the squares of numbers from 10 to 20 inclusive.
+
+**Homework required. Part №3:**
+- [x] Display the first 11 terms of the Fibonacci sequence.
+- [x] For each month, the bank accrues 7% of the amount to the deposit amount.
+      Write a program that the user enters the deposit amount and the number of months.
+      And the bank calculates the final amount of the deposit taking into account the accrual of interest in
+      each month. To calculate an amount including interest use a for loop.
+- [x] Write a program that prints the multiplication table to the console.
+
+**Difficulty doing homework:**
+
+There were no problems with homework. Material learned and understood.
+
+[Table of contents](#anchor)
