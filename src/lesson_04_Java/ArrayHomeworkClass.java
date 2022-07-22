@@ -27,17 +27,19 @@ public class ArrayHomeworkClass {
         System.out.print("Please enter a number to check if it is in the array: ");
         int inputNumber1 = sc.nextInt();
 
-        // Sorting the array since binarySearch() only works with a sorted array
-        Arrays.sort(array1);
+        Arrays.sort(array1); // Sorting the array since binarySearch() only works with a sorted array
+
+        String outputMessageFirstTask; // Create a variable to display a message to the console
 
         // Checking through binary search whether there is a given number in the array.
         // If it is, then the result will be a number greater or equal 0.
         // And if the number is not in the array, then the result will be a negative number.
         if (Arrays.binarySearch(array1, inputNumber1) >= 0) {
-            System.out.println("The entered number " + inputNumber1 + " is INCLUDED in the array " + Arrays.toString(array1));
+            outputMessageFirstTask = "The entered number " + inputNumber1 + " is INCLUDED in the array " + Arrays.toString(array1);
         } else {
-            System.out.println("The entered number " + inputNumber1 + " is NOT in the array " + Arrays.toString(array1));
+            outputMessageFirstTask = "The entered number " + inputNumber1 + " is NOT in the array " + Arrays.toString(array1);
         }
+        System.out.println(outputMessageFirstTask);
 
         // Line to separate tasks
         System.out.println("---------------------------------------------------------------\n");
@@ -68,9 +70,11 @@ public class ArrayHomeworkClass {
             }
         }
 
+        String outputMessageSecondTask; // Create a variable to display a message to the console
+
         if (!isInArray) {
-            System.out.println("The required element is not in this array! \n" +
-                    "Source array: " + Arrays.toString(array2) + ". Length: " + array2.length);
+            outputMessageSecondTask = "The required element is not in this array! \n" +
+                    "Source array: " + Arrays.toString(array2) + ". Length: " + array2.length;
         } else {
             // Create an array less than the first by the number of elements to be removed
             int[] newArray = new int[array2.length - counter];
@@ -82,10 +86,12 @@ public class ArrayHomeworkClass {
                 }
             }
 
-            System.out.println("Source array: " + Arrays.toString(array2) + ". Length: " + array2.length + "\n" +
+            outputMessageSecondTask = "Source array: " + Arrays.toString(array2) + ". " + "Length: " + array2.length + "\n" +
                     "Element to be deleted: " + deleteElement + "\n" +
-                    "New array after removing required number: " + Arrays.toString(newArray) + ". " + "Length: " + newArray.length);
+                    "New array after removing required number: " + Arrays.toString(newArray) + ". " + "Length: " + newArray.length;
         }
+
+        System.out.println(outputMessageSecondTask);
 
         // Line to separate tasks
         System.out.println("---------------------------------------------------------------\n");
@@ -121,8 +127,7 @@ public class ArrayHomeworkClass {
             if (array3[i] < min) {
                 min = array3[i];
             }
-            // Calculate the sum of array elements
-            sumOfArray3 += array3[i];
+            sumOfArray3 += array3[i]; // Calculate the sum of array elements
         }
 
         // Output information
@@ -144,11 +149,9 @@ public class ArrayHomeworkClass {
         int sumOfArray41 = 0;
         int sumOfArray42 = 0;
 
-        /*
-        Fill a first and a second arrays of 5 elements from 0 to 10.
-        The first array is filled with elements "i", the second array is filled with elements "j"
-        According to the condition of the task, arrays of the same length, therefore, one condition is set in the cycle
-         */
+        // Fill a first and a second arrays of 5 elements from 0 to 10.
+        // The first array is filled with elements "i", the second array is filled with elements "j"
+        // According to the condition of the task, arrays of the same length, therefore, one condition is set in the cycle
         for (int i = 0, j = 0; i < array41.length; i++, j++) {
             array41[i] = (int) ((Math.random() * 11));
             array42[j] = (int) ((Math.random() * 11));
@@ -156,23 +159,27 @@ public class ArrayHomeworkClass {
             sumOfArray42 += array42[j]; // Calculate the sum of the elements of the second array
         }
 
-        System.out.println("First array: " + Arrays.toString(array41) + "\n" +
-                "Second array: " + Arrays.toString(array42)); // Output for the first and second arrays
+        // Output for the first and second arrays
+        System.out.println("First array: " + Arrays.toString(array41) + "\n" + "Second array: " + Arrays.toString(array42));
 
         // Calculate the average for the first and second arrays
         double averageOfArray41 = ((float) sumOfArray41) / array41.length;
         double averageOfArray42 = ((float) sumOfArray42) / array42.length;
 
+        String outputMessageFourthTask; // Creating a variable to display a message to the console
+
         // Check which average is greater and display a message
         if (averageOfArray41 > averageOfArray42) {
-            System.out.printf("The average of THE FIRST array (%.1f) is greater " +
+            outputMessageFourthTask = String.format("The average of THE FIRST array (%.1f) is greater " +
                     "than the average of THE SECOND array (%.1f)", averageOfArray41, averageOfArray42);
         } else if (averageOfArray42 > averageOfArray41) {
-            System.out.printf("The average of THE SECOND array (%.1f) is greater " +
+            outputMessageFourthTask = String.format("The average of THE SECOND array (%.1f) is greater " +
                     "than the average of THE FIRST array (%.1f)", averageOfArray42, averageOfArray41);
         } else {
-            System.out.println("The average is the same");
+            outputMessageFourthTask = "The average is the same";
         }
+
+        System.out.println(outputMessageFourthTask);
 
     }
 }

@@ -47,8 +47,10 @@ public class AdditionalArrayClass {
             }
         }
 
+        String outputMessageFirstTask; // Create a variable to display a message to the console
+
         if (!isInArray) {
-            System.out.println("There are no even elements in this array.");
+            outputMessageFirstTask = "There are no even elements in this array.";
         } else {
             //Create a new array with a length equal to the number of even elements of the first array
             int[] newArray = new int[counter];
@@ -60,9 +62,11 @@ public class AdditionalArrayClass {
                 }
             }
 
-            System.out.println("New array with only even elements: " + Arrays.toString(newArray)
-                    + ". Length: " + newArray.length);
+            outputMessageFirstTask = "New array with only even elements: " + Arrays.toString(newArray)
+                    + ". Length: " + newArray.length;
         }
+
+        System.out.println(outputMessageFirstTask);
 
         // Line to separate tasks
         System.out.println("---------------------------------------------------------------\n");
